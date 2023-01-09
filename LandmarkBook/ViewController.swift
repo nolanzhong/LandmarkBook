@@ -13,6 +13,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var rideNames = [String]()
     var rideImages = [UIImage]()
+    
+    var chosenName = ""
+    var chosenImage = UIImage()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -46,6 +49,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         content.text = rideNames[indexPath.row] //displays corresponding index in ridename
         cell.contentConfiguration = content
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        chosenName = rideNames[indexPath.row]
+        chosenImage = rideImages[indexPath.row]
+        performSegue(withIdentifier: "todetailsVC", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "todetailsVC" {
+            let destinationVC = segue.destination as! DetailVC
+            destinationVC.selectedRide = chosenName
+            destinationVC.selectedImage = chosenImage
+        }
     }
 }
 

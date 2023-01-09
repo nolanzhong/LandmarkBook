@@ -13,6 +13,7 @@
 		7EC04B05296BC9B600F25EC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EC04B03296BC9B600F25EC2 /* Main.storyboard */; };
 		7EC04B07296BC9B800F25EC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EC04B06296BC9B800F25EC2 /* Assets.xcassets */; };
 		7EC04B0A296BC9B800F25EC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EC04B08296BC9B800F25EC2 /* LaunchScreen.storyboard */; };
+		7EC04B12296C864D00F25EC2 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC04B11296C864D00F25EC2 /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7EC04B06296BC9B800F25EC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EC04B09296BC9B800F25EC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EC04B0B296BC9B800F25EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EC04B11296C864D00F25EC2 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				7EC04B06296BC9B800F25EC2 /* Assets.xcassets */,
 				7EC04B08296BC9B800F25EC2 /* LaunchScreen.storyboard */,
 				7EC04B0B296BC9B800F25EC2 /* Info.plist */,
+				7EC04B11296C864D00F25EC2 /* DetailVC.swift */,
 			);
 			path = LandmarkBook;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EC04B02296BC9B600F25EC2 /* ViewController.swift in Sources */,
+				7EC04B12296C864D00F25EC2 /* DetailVC.swift in Sources */,
 				7EC04AFE296BC9B600F25EC2 /* AppDelegate.swift in Sources */,
 				7EC04B00296BC9B600F25EC2 /* SceneDelegate.swift in Sources */,
 			);
