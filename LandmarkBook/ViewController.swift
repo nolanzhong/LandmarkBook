@@ -64,5 +64,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             destinationVC.selectedImage = chosenImage
         }
     }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            self.rideNames.remove(at: indexPath.row)
+            self.rideImages.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
 }
 
